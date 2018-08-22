@@ -106,7 +106,7 @@ class Blockchain:
         
 # Part 2 - Mining our Blockchain 
 
-# Creating an address for the node on Port 5000
+# Creating an address for the node on Port 8082
 node_address = str(uuid4()).replace('-','')
 
 # Creating a Web App
