@@ -1,0 +1,6 @@
+{
+        "nodes": ["https://blockchain-geonyoon.c9users.io:8081",
+                  "https://blockchain-geonyoon.c9users.io:8082",
+                  "https://blockchain-geonyoon.c9users.io:8080"
+        ]
+}
