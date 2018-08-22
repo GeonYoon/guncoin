@@ -20,10 +20,58 @@ app.run(host = '0.0.0.0', port = CHANGE THIS SECTION WITH RIGHT PORT)
 ### Test on Postman. 
 You need to use postman to deal with API requests. <br />
 While terminals are running, open up Postman.
-####  get_chain
-    
-2. connect_node
-3. 
+
+####  get_chain [GET_REQUEST]
+You need a following line to check out the status of current chain 
+```
+https://HOSTNAME:8080/get_chain
+```
+#### connect_node [POST_REQUEST]
+You need following lines to connect each nodes. 
+```
+https://HOSTNAME:8080/connect_node
+```
+with the body of(raw JSON type) : 
+```
+{
+        "nodes": ["https:/HOSTNAME:8081",
+                  "https:/HOSTNAME:8082"
+        ]
+}
+```
+You need to do simiar process to two other nodes to connect entire nodoes
+
+#### mine_block [GET_REQUEST]
+Actually this request should only handle a mining process but, for a testing purpose, 
+```mine_block``` request at this code add a sinlge transaction. 
+When you mine a block, entire entire saved transactions are goine to added in the block.
+And then the transaction list goes to empty. <br />
+You need following lines to mine a block. 
+```
+https://HOSTNAME:8080/mine_block
+```
+
+#### replace_chain [GET_REQUEST]
+You need to execute this request to update other nodes. 
+```
+https://HOSTNAME:8080/replace_chain
+```
+#### add_transaction [POST_REQUEST]
+You need to execute this request to add a transaction. 
+```
+https://HOSTNAME:8080/add_transaction
+```
+with the body of(raw JSON type) : 
+```
+{
+        {
+    "sender": "SENDER_NAME",
+    "receiver": "RECEIVER_NAME",
+    "amount": AMOUNT_OF_MONEY_TO_SEND
+}
+}
+```
+
 
 ## Built With
 
