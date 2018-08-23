@@ -22,20 +22,21 @@ You need to use postman to deal with API requests. <br />
 While terminals are running, open up Postman.
 
 #### get_chain [GET_REQUEST]
-You need a following line to check out the status of current chain 
+You need a following line to check out the status of current chain of the node. 
 ```
-https://HOSTNAME:8080/get_chain
+https://HOSTNAME:PORT_OF_NODE/get_chain
 ```
+
 #### connect_node [POST_REQUEST]
 You need following lines to connect each nodes. 
 ```
-https://HOSTNAME:8080/connect_node
+https://HOSTNAME:PORT_OF_NODE_1/connect_node
 ```
 with the body of(raw JSON type) : 
 ```
 {
-        "nodes": ["https:/HOSTNAME:8081",
-                  "https:/HOSTNAME:8082"
+        "nodes": ["https:/HOSTNAME:PORT_OF_NODE_2",
+                  "https:/HOSTNAME:PORT_OF_NODE_3"
         ]
 }
 ```
@@ -48,18 +49,18 @@ When you mine a block, entire current transactions are going to added in the blo
 And then the transaction list goes to empty. <br />
 You need following lines to mine a block. 
 ```
-https://HOSTNAME:8080/mine_block
+https://HOSTNAME:PORT_OF_NODE/mine_block
 ```
 
 #### replace_chain [GET_REQUEST]
 You need to execute this request to update other nodes. 
 ```
-https://HOSTNAME:8080/replace_chain
+https://HOSTNAME:PORT_OF_NODE/replace_chain
 ```
 #### add_transaction [POST_REQUEST]
 You need to execute this request to add a transaction. 
 ```
-https://HOSTNAME:8080/add_transaction
+https://HOSTNAME:PORT_OF_NODE/add_transaction
 ```
 with the body of(raw JSON type) : 
 ```
