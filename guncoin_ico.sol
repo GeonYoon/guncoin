@@ -44,7 +44,7 @@ contract guncoin_ico {
         
     }
     
-    // Selling Hadcoins 
+    // Selling Guncoins 
     function sell_guncoins(address investor, unit guncoins_sold) external{
         equity_guncoins[investor] -= guncoins_sold;
         equity_usd[investor] = equity_guncoins[investor] / usd_to_guncoins; 
