@@ -1,5 +1,11 @@
 # Guncoin 
 
+This is a simple cryptocurrency using Blockchain. 
+There are three nodes, and each one has different port so that it can communicate with 
+other nodes via Flask. API request can be tested on Postman. 
+You can make transactions and mine them as well. Unlike actually cryptocurrency, 
+you need to manually update each nodes if any changes are made such as new blocks are mined or transactions are made. 
+
 ## How To Use
 
 ### Run all of guncoin files. 
