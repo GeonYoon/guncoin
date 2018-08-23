@@ -1,9 +1,3 @@
-# Modlue 1 - Create a Cryptocurrency  
-
-# To be installed 
-# pip install Falsk==0.12.2
-# pip install requests==2.18.4
-
 # Importing the libraries 
 import datetime
 import hashlib
