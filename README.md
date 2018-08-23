@@ -21,7 +21,7 @@ app.run(host = '0.0.0.0', port = CHANGE THIS SECTION WITH RIGHT PORT)
 You need to use postman to deal with API requests. <br />
 While terminals are running, open up Postman.
 
-####  get_chain [GET_REQUEST]
+#### get_chain [GET_REQUEST]
 You need a following line to check out the status of current chain 
 ```
 https://HOSTNAME:8080/get_chain
@@ -43,8 +43,8 @@ You need to do simiar process to two other nodes to connect entire nodoes
 
 #### mine_block [GET_REQUEST]
 Actually this request should only handle a mining process but, for a testing purpose, 
-```mine_block``` request at this code add a sinlge transaction. 
-When you mine a block, entire entire saved transactions are goine to added in the block.
+```mine_block``` request on this code add a sinlge transaction. 
+When you mine a block, entire current transactions are going to added in the block.
 And then the transaction list goes to empty. <br />
 You need following lines to mine a block. 
 ```
@@ -65,13 +65,12 @@ with the body of(raw JSON type) :
 ```
 {
         {
-    "sender": "SENDER_NAME",
-    "receiver": "RECEIVER_NAME",
-    "amount": AMOUNT_OF_MONEY_TO_SEND
-}
+                "sender": "SENDER_NAME",
+                "receiver": "RECEIVER_NAME",
+                "amount": AMOUNT_OF_MONEY_TO_SEND
+        }
 }
 ```
-
 
 ## Built With
 
