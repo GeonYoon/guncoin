@@ -23,6 +23,7 @@ python3 guncoin_node_8082.py
 ```
 If port 8080,8081,8082 does not work on your local machine, you can replace them with 
 5000,5001,5003. <br />
+
 In this case, you should customize all of guncoin files. 
 ```
 app.run(host = '0.0.0.0', port = CHANGE THIS SECTION WITH RIGHT PORT)
