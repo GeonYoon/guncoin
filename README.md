@@ -12,7 +12,7 @@ you need to manually update each nodes if any changes are made such as new block
 <b>You need a python version 3.0 or higher</b><br />
 Followin modules should be installed<br />
 ```
-pip install Falsk==0.12.2
+pip install Flask==0.12.2
 pip install requests==2.18.4
 ```
 Open up three different terminals to run all of three guncoin files 
