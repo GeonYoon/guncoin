@@ -88,7 +88,7 @@ with the body of(raw JSON type) :
 ## Built With
 
 * [FLASK](http://flask.pocoo.org/) - To communicate with each files
-* [POSTMAN](https://www.getpostman.com/) - To handle API requests
+* [POSTMAN](https://www.getpostman.com/) - To test API requests
 
 
 ## Authors
